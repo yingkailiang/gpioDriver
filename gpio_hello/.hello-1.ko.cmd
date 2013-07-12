@@ -1,0 +1,1 @@
+cmd_/home/zhc/gpio_hello/hello-1.ko := /home/zhc/linux-dev/dl/gcc-linaro-arm-linux-gnueabihf-4.8-2013.05_linux/bin/arm-linux-gnueabihf-ld -EL -r  -T /home/zhc/linux-dev/KERNEL/scripts/module-common.lds --build-id  -o /home/zhc/gpio_hello/hello-1.ko /home/zhc/gpio_hello/hello-1.o /home/zhc/gpio_hello/hello-1.mod.o

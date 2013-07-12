@@ -1,0 +1,12 @@
+# Cross compilation Makefile for ARM
+ 
+obj-m := gpio.o
+obj-m := user_gpio.o
+ 
+CCPREFIX=${HOME}/linux-dev/dl/gcc-linaro-arm-linux-gnueabihf-4.8-2013.05_linux/bin/arm-linux-gnueabihf-
+
+all:
+make -C ${HOME}/linux-dev/KERNEL ARCH=arm CROSS_COMPILE=${CCPREFIX} M=$(PWD) modules
+ 
+clean:
+make -C ${HOME}/linux-dev/KERNEL ARCH=arm CROSS_COMPILE=${CCPREFIX} M=$(PWD) clean
